@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photo_contact"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/contact" />
+        <TextView
+            android:id="@+id/textNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/photo_contact"
+            android:layout_toLeftOf="@id/favorit"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/favorit"
+            android:layout_toRightOf="@id/photo_contact"
+            android:layout_below="@id/textNom"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/btndel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/deleting"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/btnedit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/btndel"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/favorit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:layout_toLeftOf="@id/btnedit"
+            app:srcCompat="@drawable/favorit_border" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

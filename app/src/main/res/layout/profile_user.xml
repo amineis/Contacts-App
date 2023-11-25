@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/welcome"
+        android:layout_width="140dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/firstname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+
+        android:hint="FIRSTNAME"
+
+        android:textSize="25sp"
+        app:boxStrokeColor="@color/black_transparent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/lastname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+
+        android:hint="LASTNAME"
+
+        android:textSize="25sp"
+        app:boxStrokeColor="@color/black_transparent"
+
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black_transparent"
+
+
+        app:hintTextColor="@color/black_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname"
+        app:startIconTint="@color/black_transparent" />
+
+    <TextView
+        android:id="@+id/birthdate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+
+        android:hint="BIRTHDATE"
+
+        android:textSize="25sp"
+        app:boxStrokeColor="@color/black_transparent"
+
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/DarkRed"
+
+        app:hintTextColor="@color/black_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastname"
+        app:startIconTint="@color/black_transparent" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+
+        android:hint="EMAIL"
+
+        android:textSize="25sp"
+        app:boxStrokeColor="@color/black_transparent"
+
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black_transparent"
+
+        app:hintTextColor="@color/black_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthdate"
+        app:startIconTint="@color/black_transparent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
